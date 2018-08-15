@@ -1,0 +1,23 @@
+{
+  "name": "JimGuccione",
+  "version": "1.0.0",
+  "description": "__Bold__",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimGuccione/SavvyPortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JimGuccione/SavvyPortfolio/issues"
+  },
+  "homepage": "https://github.com/JimGuccione/SavvyPortfolio#readme",
+  "devDependencies": {
+    "eslint": "^5.3.0"
+  }
+}
