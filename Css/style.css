@@ -1,3 +1,5 @@
+body{margin: 0}
+
 h1 {
     background-color: blue
 }
@@ -18,5 +20,6 @@ color: darkblue}
 
 .lilcaps {font: small-caps}
 
-#content {background-color: rgb(75, 30, 199)
+#content {background-color: rgb(75, 30, 199; padding: 8)
+    
 }
