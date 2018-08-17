@@ -1,5 +1,5 @@
 body{margin: 0;
-padding: 80px}
+padding: 10px}
 
 .container {margin: 0 auto;
 max-width: 800px;
@@ -22,13 +22,14 @@ li{
 }
 .emphasized {font-size: larger;
 color: darkblue;
-padding: 90px}
+padding: 20px}
 
 .lilcaps {font: small-caps;
-    padding: 90px
+    padding: 10px
 }
 
-#content {background-color: rgb(75, 30, 199; 
+#content {
+    background-color: rgb(75, 30, 199); 
     padding: 20px
     
 }
@@ -36,6 +37,6 @@ padding: 90px}
 img {
 display: block;
 margin: 20px auto;
-max-width: 300px;
+max-width: 900px;
 width: 100%;
 }
