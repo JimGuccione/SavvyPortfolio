@@ -1,6 +1,8 @@
 body{margin: 0;
 padding: 10px}
 
+.container{margin: 50px}
+
 h1 {
     background-color: blue
 }
@@ -14,7 +16,7 @@ h4{
     background-color: darkgreen
 }
 li{
-    color: blue; font-size: larger; font-family: fantasy;padding: 20px
+    color: blue; font-size: larger; font-family: fantasy;padding: 3px
 }
 .emphasized {font-size: larger;
 color: darkblue}
