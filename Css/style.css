@@ -19,9 +19,12 @@ li{
     color: blue; font-size: larger; font-family: fantasy;padding: 3px
 }
 .emphasized {font-size: larger;
-color: darkblue}
+color: darkblue;
+padding: 90px}
 
-.lilcaps {font: small-caps}
+.lilcaps {font: small-caps;
+    padding: 90px
+}
 
 #content {background-color: rgb(75, 30, 199; 
     padding: 20px
