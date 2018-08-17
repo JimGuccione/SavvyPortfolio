@@ -16,7 +16,7 @@ li{
 .emphasized {font-size: larger;
 color: darkblue}
 
-.lilcaps{font: small-caps; font: bolder}
+.lilcaps{font: small-caps}
 
 #content {background-color: rgb(75, 30, 199)
 }
