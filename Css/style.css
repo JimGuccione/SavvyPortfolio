@@ -1,0 +1,20 @@
+h1 {
+    background-color: blue
+}
+h2 {
+    background-color: darkblue; color: aliceblue
+}
+h3{
+    background-color: darkgreen
+}
+h4{
+    background-color: darkgreen
+}
+li{
+    color: blue; font-size: larger; font-family: fantasy
+}
+.emphasized {font-size: larger;
+color: darkblue}
+
+#content {background-color: rgb(75, 30, 199)
+}
