@@ -1,7 +1,9 @@
 body{margin: 0;
 padding: 10px}
 
-.container{margin: 50px}
+.container{margin: 0 auto;
+max-width: 800px;
+width: 100%;}
 
 h1 {
     background-color: blue
@@ -30,7 +32,7 @@ padding: 90px}
     padding: 20px
     
 }
-img{
+img {
     display: block;
 margin: 20px auto;
 max-width: 300px;
