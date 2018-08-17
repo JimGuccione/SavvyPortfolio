@@ -30,3 +30,9 @@ padding: 90px}
     padding: 20px
     
 }
+img{
+    display: block;
+margin: 20px auto;
+max-width: 300px;
+width: 100%;
+}
