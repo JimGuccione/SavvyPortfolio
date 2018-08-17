@@ -1,7 +1,7 @@
 body{margin: 0;
-padding: 10px}
+padding: 80px}
 
-.container{margin: 0 auto;
+.container {margin: 0 auto;
 max-width: 800px;
 width: 100%;}
 
@@ -34,7 +34,7 @@ padding: 90px}
 }
 
 img {
-    display: block;
+display: block;
 margin: 20px auto;
 max-width: 300px;
 width: 100%;
