@@ -17,7 +17,7 @@ export default`
         <ul>
             <li>Training</li>
             <li>Grades</li>
-            <li>Coaches/li>
+            <li>Coaches</li>
         </ul>
         </li>
 
@@ -33,3 +33,5 @@ export default`
 
 </div>
 `;
+
+//

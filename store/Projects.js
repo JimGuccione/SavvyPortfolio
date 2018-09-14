@@ -4,5 +4,5 @@ export default {
         'Blog',
         'Contact',
     ],
-    'title': 'Welcome to my Blog'
+    'title': 'Welcome to my Projects'
 };
