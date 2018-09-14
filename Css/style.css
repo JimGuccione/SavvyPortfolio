@@ -6,16 +6,17 @@ grid-template-areas:
 "header"
 "content"
 "footer";
-grid-template-rows: min-content min-content auto min-content;
+grid-template-rows:none;
 background-color: black;
 }
 
 .container {
     max-width: 1500px;
-    grid-area: content;
+    grid-area: auto;
     margin: 0 auto;
     width: auto;
     flex-direction: row;
+    color: blue;
     
 
 }
@@ -28,7 +29,7 @@ background-color: black;
 
 h1 {
     background-color: black;
-    color: rgb(19, 29, 170);
+    color: blue;
     font-family: fantasy;
     font-size: 48px;
 }
@@ -47,13 +48,15 @@ h4{
 }
 li{
     color: blue; 
-    font-size:x-large ; 
     font-family: fantasy;padding: 0px
 }
 
 ul {
     margin: 0;
-    padding: 5px;
+    padding: 10px;
+}
+ol{
+    list-style: none
 }
 
 .section{
@@ -63,8 +66,17 @@ ul {
 color: darkblue;
 }
 
-.lilcaps {font: small-caps;
-    padding: 10px
+#text1 p{
+    color: blue;
+}
+#lilcaps p {
+    flex-direction: row;
+    justify-content: right;
+    width: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+    padding: 10px;
+    font-size: 14px;
 }
 #header {color: rgb(7, 30, 245);
     padding: 10px 10px 10px 10px;
@@ -74,11 +86,15 @@ color: darkblue;
 }
 #footer {
     grid-area:footer;
+    color: blue
 }
 
 #content{
     background-color: rgb(0, 0, 0); 
-    padding: 20px
+    color: blue;
+    padding: 20px;
+    flex: none;
+    align-content: stretch;
     
 }
 #section {background-color: rgb(7, 7, 7)}
@@ -93,7 +109,7 @@ max-width: 900px;
 width: 100%;
 }
 
-#test{display: block;
+#test {display: block;
     margin: 20px auto;
     max-width: 800px;
     width: 100%;}
@@ -127,7 +143,7 @@ flex-direction: column;
 }
 
 #navigation > ul {
-    background-color: darkblue;
+    background-color: black;
     display: flex;
     align-items: left;
     justify-content: space-between;
@@ -149,9 +165,24 @@ flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: left;
-   
+}
+
+.span1 ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 16px;
 
 }
+.span2  ul { 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
 
 input {
     margin: 10px;
@@ -180,15 +211,16 @@ label{
     font-family: 'Ubuntu', sans-serif;
     background-color: Black
 }
-p {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 36px;
-}
+
 #footer ul{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
+}
+
+#greeting{
+    color: white
 }
 
 
@@ -201,3 +233,5 @@ p {
         grid-template-columns: 20vw auto;
     }
 }
+
+
