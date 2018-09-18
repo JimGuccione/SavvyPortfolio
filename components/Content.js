@@ -1,4 +1,4 @@
-import * as Pages from '/Users/jamesguccione/Code/SavvyCoder/JimGuccione/components/Pages';
+import * as Pages from './components/Pages';
 
 export default function Content(state){
     const page = state[state.active];
