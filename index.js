@@ -1,51 +1,42 @@
+import axios from 'axios';
 import Navigo from 'navigo';
-import Navigation from './Components/Navigation';
-import Header from './Components/Header';
-import Content from './Components/Content';
-import Footer from './Components/Footer';
+import Content from './components/Content';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Navigation from './components/Navigation';
+import * as State from './store';
 
-var router = new Navigo();
-var initialHTML = document.body.innerHTML;
 
-// var state = 'www' ;   // Get rid of this
+var root = document.querySelector('#root');
+var router = new Navigo(window.location.origin); // returns a router Object
+var newState = Object.assign({}, State);
 
-var State = {
-    'active': 'home',
-
-    'home': {
-        'title': 'Welcome to my Port'
-    },
-
-    'blog': {
-        'title': 'Welcome to Blog'
-    },
-
-    'projects': {
-        'title': 'Welcome to Projects'
-    },
-};
-// this keeps all the navigation
-
-router
-    .on(':path', (params) => console.log(params.page))
-    .on('/', () => console.log('hello home page!'))
-    .resolve();
-
-document
-    .body
-    .innerHTML = `
-      ${Navigation}
-      ${Header}
-      ${Content}
-      ${Footer}
-      ${initialHTML} // we still need this
+function render(state){
+    root.innerHTML = `
+        ${Navigation(state[state.active])}
+        ${Header(state[state.active])}
+        ${Content(state)}
+        ${Footer()}
     `;
 
-function handleRoute(params){
-    var page = capitalize(params.page);
-      
-    startApp(states[page]);
+    router.updatePageLinks();
 }
 
+function handleNavigation(activePage){
+    newState.active = activePage;
 
-//
+    render(newState);
+}
+
+router
+    .on('/:page', (params) => handleNavigation(params.page))
+    .on('/', () => handleNavigation('home'))
+    .resolve();
+
+axios
+    .get('https://jsonplaceholder.typicode.com/posts')
+    .then((response) => {
+        newState.posts = response.data;
+
+        render(newState);
+    });

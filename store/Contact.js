@@ -1,8 +1,5 @@
 export default {
-    'links': [
-        'Home',
-        'Blog',
-        'Projects'
-    ],
-    'title': 'Welcome to my Contact Page'
+    'body': 'contact',
+    'links': [ 'home', 'blog', 'projects' ],
+    'title': 'Contact me!',
 };
