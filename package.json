@@ -4,7 +4,12 @@
   "description": "__Bold__",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html && cp _redirects ./dist/"
+=======
     "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> parent of ccadf66... added parcel as dev dependency, added start command to package.json to start server
   },
   "repository": {
     "type": "git",
@@ -24,6 +29,11 @@
     "axios": "^0.18.0",
     "lodash": "^4.17.11",
     "navigo": "^7.1.2",
+<<<<<<< HEAD
     "parcel": "^1.9.7"
+=======
+    "parcel": "^1.9.7",
+    "semver": "^5.5.1"
+>>>>>>> cf1f04a1f0611323c0830a25e9fe51b816f855da
   }
 }
