@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 
 var initialHTML = document.body.innerHTML;
 
-
 var State = {
     'active': 'home',
 
@@ -43,7 +42,6 @@ function handleNavigation(event){
     event.preventDefault();
 }
 // wtf look for State and newState
-
 
 
 
@@ -106,7 +104,6 @@ function render(state){
     );
 
 
-
 document
     .body
     .innerHTML = `
@@ -144,7 +141,6 @@ document
 
 
 
-
     links[1].addEventListener(
         'click',
         handleNavigation
@@ -160,7 +156,6 @@ function render(state){
 
    console.log('router->', router);
 
-
     console.log('router->', router);
 
     router
@@ -168,3 +163,5 @@ function render(state){
     .on('/', () => handleNavigation('home'))
     .resolve();
 }
+
+
