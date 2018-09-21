@@ -1,14 +1,13 @@
 export default function Header(state){
     return `
       <div id="header">
-        <h1>Go Next Level Baseball </h1>
+        <h1>Go Next Level Baseball</h1>
         <h2>Recruiting Advisor</h2>
-        <div id="greeting.js"></div>
-        <h3> Test</h3>
-        <h4> Whasup </h4>
+        <h3>Test</h3>
+        <h4>Whasup</h4>
 
         <div class="span2">
-          <ul>
+          <ul class="header-ul">
               <li>Finding the perfect college fit</li>
               <li>Assisting over 150 players and families</li>
               <li>2018 Class</li>

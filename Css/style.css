@@ -195,6 +195,12 @@ img {
   text-align: center;
 }
 
+.header-ul {
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 #content {
   background-color: #eee;
   grid-area: content;
