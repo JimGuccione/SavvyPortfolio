@@ -55,10 +55,10 @@ ul {
 }
 
 img {
-  display: block;
+  /*display: block;*/
   margin: 20px auto;
-  max-width: 1000px;
-  width: 100%;
+  /*max-width: 1000px;*/
+  /*width: 100%;*/
 }
 
 .container {
