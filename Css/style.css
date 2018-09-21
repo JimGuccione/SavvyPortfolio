@@ -147,7 +147,8 @@ img {
   color: blue;
   grid-area: navigation;
   padding: 5px;
-  position: absolute;
+  position: sticky;
+  width: 100%;
   justify-content: space-evenly;
   top: 0;
 }
