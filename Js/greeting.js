@@ -26,8 +26,6 @@ function welcomeUser(){
     }
 }
 
-console.log('hello daniel');
-
 welcomeUser(name);
 
 // var state = ()
