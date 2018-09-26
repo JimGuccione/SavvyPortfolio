@@ -1,6 +1,5 @@
 import axios from 'axios';
 import Navigo from 'navigo';
-import { styler, timeline } from 'popmotion';
 import Content from './components/Content';
 // import Greeter from './components/Greeter';
 import Header from './components/Header';

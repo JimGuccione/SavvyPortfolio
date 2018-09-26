@@ -78,7 +78,7 @@ img {
 
 
 .card {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: blue;
   padding: 5px;
   width: 100%;
@@ -130,7 +130,7 @@ img {
   color: white;
   transform: rotateY(180deg);
 }
-}
+
 /* Navbar container */
 .navbar {
   overflow: hidden;
@@ -181,7 +181,7 @@ img {
   display: none;
   position: fixed;
   background-color: blue;
-  color: azure
+  color: azure;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -255,11 +255,11 @@ img {
 #header {
   color: blue;
   background-color: black;
-  font-family: 
+  font-family: 'bangers',cursive;
   grid-area: header;
   padding: 10px;
   text-align: center;
-  font-size: xx-large;
+  font-size: 36px;
 }
 
 #header2{
