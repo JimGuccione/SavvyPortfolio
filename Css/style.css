@@ -8,7 +8,10 @@ a {
   grid-template-areas:
   "navigation"
   "header"
+  "header2"
+  "span2"
   "content"
+  "flips"
   "footer";
   grid-template-rows: min-content min-content auto min-content;
 }
@@ -56,15 +59,77 @@ ul {
 
 img {
   /*display: block;*/
-  margin: 20px auto;
+  margin: auto;
   /*max-width: 1000px;*/
   /*width: 100%;*/
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 800px;
+
+
+
+#flips{
+  background-color:black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 0px;
+  vertical-align: top;
+  }
+
+
+.card {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: blue;
+  padding: 5px;
   width: 100%;
+  align-self: center;
+
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: darkblue;
+  color: white;
+  transform: rotateY(180deg);
+}
 }
 /* Navbar container */
 .navbar {
@@ -190,9 +255,20 @@ img {
 #header {
   color: blue;
   background-color: black;
+  font-family: 
   grid-area: header;
   padding: 10px;
   text-align: center;
+  font-size: xx-large;
+}
+
+#header2{
+  color:green;
+  background-color:black;
+  grid-area: header2;
+  padding: 5px;
+  text-align: center;
+  font-size: large;
 }
 
 .header-ul {
@@ -201,11 +277,31 @@ img {
   text-align: left;
 }
 
-#content {
-  background-color: #eee;
-  grid-area: content;
-  padding: 10px;
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  display: inline;
+  background-color: deeppink;
 }
+
+#content img{
+  display: flex;
+  align-self: center;
+}
+
+#content {
+  background-color: grey;
+  grid-area: content;
+  padding: 5px;
+  width: 100%;
+  display: block;
+  align-items: center;
+}
+
+#content em{
+  align-items: flex-end;
+}
+
 
 #content li:hover {
   background-color: black;
@@ -216,6 +312,16 @@ img {
   grid-area: footer;
   color: blue;
   padding: 10px;
+  justify-content: space-around;
+  width: auto;
+}
+
+.span1 ul{
+  justify-items: space-between;
+  color: green;
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-end;
 }
 
 /*@media screen and (min-width: 500px) {*/
