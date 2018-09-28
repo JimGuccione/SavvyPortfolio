@@ -9,6 +9,5 @@ export default function Content(state){
           ${Pages[page.body](state.posts)}
         </div>
       </div>
-     
     `;
 }
