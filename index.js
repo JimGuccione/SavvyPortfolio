@@ -13,19 +13,31 @@ var router = new Navigo(window.location.origin); // returns a router Object
 
 function render(){
     var state = store.getState();
+<<<<<<< HEAD
 }
 
 root.innerHTML = `
+=======
+
+    root.innerHTML = `
+>>>>>>> parent of eac5234... added section to content
         ${Navigation(state[state.active])}
         ${Header(state)}
         ${Content(state)}
         ${Footer()}
     `;
 
+<<<<<<< HEAD
 // greeter.render(root);
 
 router.updatePageLinks();
 
+=======
+    // greeter.render(root);
+
+    router.updatePageLinks();
+}
+>>>>>>> parent of eac5234... added section to content
 
 function handleNavigation(activePage){
     store.dispatch((state) => Object.assign(state, { 'active': activePage }));
