@@ -14,9 +14,14 @@ var router = new Navigo(window.location.origin); // returns a router Object
 function render(){
     var state = store.getState();
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 root.innerHTML = `
+=======
+
+    root.innerHTML = `
+>>>>>>> parent of eac5234... added section to content
 =======
 
     root.innerHTML = `
@@ -28,11 +33,14 @@ root.innerHTML = `
     `;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // greeter.render(root);
 
 router.updatePageLinks();
 
 =======
+=======
+>>>>>>> parent of eac5234... added section to content
     // greeter.render(root);
 
     router.updatePageLinks();
